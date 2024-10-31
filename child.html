@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child</title>
+</head>
+<body>
+  <div>Chile Page</div>
+  <script>
+    window.addEventListener('message', (event) => {
+    if (event.data === 'unload_iframe') {
+      console.log('child page before unload');
+    }
+});
+  </script>
+</body>
+</html>
